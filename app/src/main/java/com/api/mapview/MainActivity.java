@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        mMapView.addLayer(new AnimateLayer(mMapView));
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-//        mMapView.refresh();
     }
 
     private Bitmap getBitmap(){
